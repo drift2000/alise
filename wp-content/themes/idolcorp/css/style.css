@@ -1,0 +1,181 @@
+.home-page {
+  background: url(/wp-content/themes/alise/images/light.png) top center no-repeat;
+  padding-top: 50%;
+  margin-top: -75px;
+}
+.home-page .decs {
+  text-align: center;
+}
+.home-page .main-text {
+  font-weight: 500;
+  color: #254aa5;
+}
+.home-page .main-text a {
+  color: #254aa5;
+  text-decoration: underline;
+}
+.home-page h1 {
+  color: #fe8f00;
+  font-size: 45px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.home-page h4 {
+  color: #5e5e5e;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project .text-desc {
+  text-align: initial;
+  line-height: 1.2;
+}
+
+.applications .gradient {
+  background: #dfdfdf;
+  background: linear-gradient(180deg, #dfdfdf 0%, white 60%);
+  height: 150px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.applications .annotation {
+  padding-left: 10px;
+  text-align: initial;
+}
+.applications .desc {
+  text-align: initial;
+  border-top: 2px solid #e0e0e0;
+}
+.applications .a1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.consortium .logo {
+  align-items: center;
+  display: flex;
+}
+.consortium .name {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  margin-bottom: 12px;
+}
+.consortium .photo {
+  display: flex;
+  align-items: center;
+  text-align: end;
+}
+
+.secondments .head-line {
+  color: #254aa5;
+  font-size: 22px;
+  font-weight: 500;
+  background: #dfdfdf;
+  background: linear-gradient(0deg, #dfdfdf 0%, white 100%);
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.secondments .scientist-line {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.secondments .task,
+.secondments .date {
+  line-height: 1.3;
+}
+
+.ec-logo {
+  text-align: right;
+}
+
+.top-menu {
+  background: #254aa5 none repeat scroll 0 0;
+  border: medium none;
+  padding: 0;
+}
+
+.menu-top-menu-container ul li {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+}
+.menu-top-menu-container ul li a {
+  color: #fdfdfd;
+  display: block;
+  font-size: 14px;
+  font-family: "Cabin";
+  padding: 15px 20px 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.menu-top-menu-container ul li a:hover {
+  background: #ffffff none repeat scroll 0 0;
+  transition: all 0.3s ease-in 0s;
+  color: #254aa5;
+  text-decoration: underline;
+}
+.menu-top-menu-container li.current-menu-item a {
+  color: #254aa5;
+  background: #ffffff none repeat scroll 0 0;
+}
+
+.page-title-wrap {
+  background-position: left center;
+  background-size: cover;
+  padding: 30px 0 20px;
+  height: 200px;
+}
+
+.entry-title {
+  font-family: "Cabin", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.entry-title a {
+  border-top: #fe8f00 8px solid;
+  color: #254aa5;
+}
+
+#content {
+  width: 100%;
+}
+
+article {
+  font-size: 22px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.pre-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fe8f00;
+}
+
+.p-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #808080;
+  padding: 30px 0 15px 25px;
+}
+
+.text-b {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.border-bottom {
+  border-bottom: 2px solid #808080 !important;
+}

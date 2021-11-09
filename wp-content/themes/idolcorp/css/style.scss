@@ -1,0 +1,220 @@
+$color-grey: #808080;
+$color-ogange: #fe8f00;
+$color-blue: #254aa5;
+
+// #1 Home
+.home-page {
+
+    background: url(/wp-content/themes/alise/images/light.png) top center no-repeat;
+    padding-top: 50%;
+    margin-top: -75px;
+
+    .decs {
+        text-align: center;
+    }
+
+    .main-text {
+        font-weight: 500;
+        color: $color-blue;
+
+        a {
+            color: $color-blue;
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        color: $color-ogange;
+        font-size: 45px;
+        font-weight: 600;
+        padding: 20px 0;
+    }
+
+    h4 {
+        color: #5e5e5e;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+// #2 Project
+.project {
+    .text-desc {
+        text-align: initial;
+        line-height: 1.2;
+    }
+}
+
+// #3 POTENTIAL APPLICATIONS
+.applications {
+    .gradient {
+        background: rgb(223, 223, 223);
+        background: linear-gradient(180deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 60%);
+        height: 150px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .annotation {
+        padding-left: 10px;
+        text-align: initial;
+    }
+
+    .desc {
+        text-align: initial;
+        border-top: 2px solid #e0e0e0;
+    }
+
+    .a1 {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+// #4 CONSORTIUM
+.consortium {
+    .logo {
+        align-items: center;
+        display: flex;
+    }
+
+    .name {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: end;
+        margin-bottom: 12px;
+    }
+
+    .photo {
+        display: flex;
+        align-items: center;
+        text-align: end;
+    }
+}
+
+// #5 SECONDMENTS
+.secondments {
+    .head-line {
+        color: $color-blue;
+        font-size: 22px;
+        font-weight: 500;
+        background: #dfdfdf;
+        background: linear-gradient(0deg, #dfdfdf 0%, white 100%);
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .scientist-line {
+        margin-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    .task,
+    .date {
+        line-height: 1.3;
+    }
+}
+
+// #6 EVENTS & ACTIVITIES
+// #7 PUBLICATIONS
+// end #
+// Header
+.ec-logo {
+    text-align: right;
+}
+
+// end
+// Menu Top
+.top-menu {
+    background: $color-blue none repeat scroll 0 0;
+    border: medium none;
+    padding: 0;
+}
+.menu-top-menu-container {
+
+    ul li {
+        // float: left;
+        position: relative;
+        z-index: 1;
+        list-style: none;
+    }
+
+    ul li a {
+        color: rgb(253, 253, 253);
+        display: block;
+        font-size: 14px;
+        font-family: 'Cabin';
+        padding: 15px 20px 20px;
+        font-weight: normal;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    ul li a:hover {
+        background: #ffffff none repeat scroll 0 0;
+        transition: all 0.3s ease-in 0s;
+        color: $color-blue;
+        text-decoration: underline;
+    }
+
+    li.current-menu-item a {
+        color: $color-blue;
+        background: #ffffff none repeat scroll 0 0;
+    }
+}
+// end
+.page-title-wrap {
+    background-position: left center;
+    background-size: cover;
+    padding: 30px 0 20px;
+    height: 200px;
+}
+
+.entry-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+
+    a {
+        border-top: $color-ogange 8px solid;
+        color: $color-blue;
+    }
+}
+#content {
+    width: 100%;
+}
+article {
+	font-size: 22px;
+	font-weight: 300;
+	text-align: justify;
+}
+.pre-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: $color-ogange;
+}
+
+.p-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: $color-grey;
+    padding: 30px 0 15px 25px;
+}
+
+.text-b {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.border-bottom {
+    border-bottom: 2px solid $color-grey !important;
+}
