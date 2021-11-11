@@ -200,18 +200,23 @@ function add_theme_scripts()
     wp_enqueue_style('main', get_template_directory_uri() . '/css/style.css', array(), '1.0');
     // wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
 }
-  add_action('wp_enqueue_scripts', 'add_theme_scripts');
+add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 function insert_img($name)
 {
     echo trailingslashit(get_stylesheet_directory_uri()). 'images/' .$name;
 }
-// add_action('insert_img', 'insert_img');
+add_action('insert_img', 'insert_img');
 
 function header_title()
 {
     ob_start();
-    echo '<div class="page-title-wrap" style="background-image:url('.get_stylesheet_directory_uri().'/images/banner.png);"></div>';
+
+        echo '<div class="page-title-wrap" style="background-image:url('.get_stylesheet_directory_uri().'/images/banner.png);">
+            <a href="'.esc_url(home_url('/')).'" rel="home">
+                <img src="'.get_stylesheet_directory_uri().'/images/logo_ALISE_mob.png" class="img-fluid mob-show" alt="">
+                </a>
+        </div>';
 
     $content=ob_get_contents();
     return $content;

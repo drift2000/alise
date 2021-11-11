@@ -31,7 +31,15 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="idolcorp_menu"><span></span><span></span><span></span></div>
+    <div class="container">
+        <div class="row align-items-center justify-content-between pb-1">
+            <div class="col-7 mob-show"><img src="<?php insert_img('logo_European_Commission_mob.png');?>" class="img-fluid" alt=""></div>
+            <div class="col-2">
+                <div id="idolcorp_menu"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </div>
+
     <div id="fpage">
         <div id="page" class="hfeed site">
             <header id="masthead" class="site-header">

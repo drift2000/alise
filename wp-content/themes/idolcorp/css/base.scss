@@ -4178,21 +4178,13 @@ div.bbp-submit-wrapper button {
 	/* border-top: 1px solid rgb(41, 60, 65); */
 }
 
-.fa-twitter,
-.fa-linkedin {
-	font-size: 24px;
-	color: #ffffff;
-}
+
 
 .soc-network a {
 	/* color: #ffffff; */
 }
 
-.soc-network,
-.copy-right {
-	padding: 20px 0;
-	color: #ffffff;
-}
+
 
 .soc-network {}
 
@@ -5075,88 +5067,6 @@ Slider css
 	}
 
 	/*-----Theme Idol Responsive Menu styling-----*/
-	#page {
-		border-top: 44px solid #212E32;
-	}
-
-	#masthead .navbar {
-		min-height: inherit;
-	}
-
-	#idolcorp_menu {
-		cursor: pointer;
-		position: absolute;
-		right: 12px;
-		text-align: center;
-		top: 8px;
-		z-index: 99;
-	}
-
-	#idolcorp_menu>span {
-		background: rgb(255, 255, 255) none repeat scroll 0 0;
-		display: block;
-		height: 3px;
-		margin: 4px auto;
-		width: 20px;
-	}
-
-	.menu-top-menu-container {
-		background: rgba(51, 51, 51, 0.97);
-		height: -webkit-calc(100% - 45px);
-		height: -moz-calc(100% - 45px);
-		height: -ms-calc(100% - 45px);
-		height: -o-calc(100% - 45px);
-		height: calc(100% - 45px);
-		left: -100%;
-		opacity: 0;
-		position: fixed;
-		top: 44px;
-		transition: all 0.3s ease 0s;
-		width: 100%;
-		z-index: 9;
-		overflow: auto;
-	}
-
-	.idolcorp-menu-active {
-		/*Disabling scrolling after the menu open*/
-		height: 100%;
-		overflow: hidden;
-	}
-
-	.idolcorp-menu-active .menu-top-menu-container {
-		display: block;
-		opacity: 1;
-		left: 0;
-	}
-
-	.menu-top-menu-container ul li {
-		border-top: 1px solid #666666;
-		display: block;
-		float: none;
-	}
-
-	/*Submenus on responsive*/
-	.menu-top-menu-container ul li ul {
-		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-		border: none;
-		display: block;
-		float: none;
-		padding: 0 0 0 30px;
-		position: static;
-		width: 100%;
-	}
-
-	.menu-top-menu-container ul li ul li ul {
-		border: none;
-	}
-
-	.menu-top-menu-container ul li ul,
-	.menu-top-menu-container ul li:hover ul ul,
-	.menu-top-menu-container ul ul li:hover ul ul,
-	.menu-top-menu-container ul ul ul li:hover ul ul,
-	.menu-top-menu-container ul ul ul ul li:hover ul ul {
-		display: block;
-	}
 
 	/*Moving search section top left*/
 	.site-header .search-container {

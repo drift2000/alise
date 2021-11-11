@@ -1,13 +1,35 @@
 $color-grey: #808080;
 $color-ogange: #fe8f00;
 $color-blue: #254aa5;
+$color-white: #ffffff;
+
+
+h1 {
+    .home-page & {
+        color: $color-ogange;
+        font-size: 45px;
+        font-weight: 600;
+        padding: 20px 0;
+
+        @media screen and (max-width: 767px) {
+            font-size: 35px;
+        }
+    }
+}
+
+.building {
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
 
 // #1 Home
 .home-page {
 
-    background: url(/wp-content/themes/alise/images/light.png) top center no-repeat;
+    background: url(/wp-content/themes/idolcorp/images/light.png) top center no-repeat;
     padding-top: 50%;
-    margin-top: -75px;
+    // margin-top: -75px;
 
     .decs {
         text-align: center;
@@ -23,24 +45,22 @@ $color-blue: #254aa5;
         }
     }
 
-    h1 {
-        color: $color-ogange;
-        font-size: 45px;
-        font-weight: 600;
-        padding: 20px 0;
-    }
-
     h4 {
         color: #5e5e5e;
         font-weight: 500;
         text-transform: uppercase;
     }
 }
+
 // #2 Project
-.project {
-    .text-desc {
+.text-desc {
+    .project & {
         text-align: initial;
         line-height: 1.2;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -57,16 +77,19 @@ $color-blue: #254aa5;
     .annotation {
         padding-left: 10px;
         text-align: initial;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
     }
 
     .desc {
         text-align: initial;
         border-top: 2px solid #e0e0e0;
-    }
 
-    .a1 {
-        display: flex;
-        justify-content: flex-start;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -78,11 +101,7 @@ $color-blue: #254aa5;
     }
 
     .name {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        text-align: end;
-        margin-bottom: 12px;
+        
     }
 
     .photo {
@@ -91,7 +110,16 @@ $color-blue: #254aa5;
         text-align: end;
     }
 }
-
+.name {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+    margin-bottom: 12px;
+    @media screen and (max-width: 767px) {
+        font-size: 19px;
+    }
+}
 // #5 SECONDMENTS
 .secondments {
     .head-line {
@@ -133,8 +161,8 @@ $color-blue: #254aa5;
     border: medium none;
     padding: 0;
 }
-.menu-top-menu-container {
 
+.menu-top-menu-container {
     ul li {
         // float: left;
         position: relative;
@@ -169,6 +197,7 @@ $color-blue: #254aa5;
         background: #ffffff none repeat scroll 0 0;
     }
 }
+
 // end
 .page-title-wrap {
     background-position: left center;
@@ -188,18 +217,26 @@ $color-blue: #254aa5;
         color: $color-blue;
     }
 }
+
 #content {
     width: 100%;
 }
+
 article {
-	font-size: 22px;
-	font-weight: 300;
-	text-align: justify;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: justify;
 }
+
 .pre-title {
     font-size: 26px;
     font-weight: 700;
     color: $color-ogange;
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        text-align: left;
+    }
 }
 
 .p-title {
@@ -207,6 +244,10 @@ article {
     font-weight: 500;
     color: $color-grey;
     padding: 30px 0 15px 25px;
+
+    @media screen and (max-width: 767px) {
+        padding: 30px 0 15px;
+    }
 }
 
 .text-b {
@@ -217,4 +258,175 @@ article {
 
 .border-bottom {
     border-bottom: 2px solid $color-grey !important;
+}
+// Footer
+.fa-twitter,
+.fa-linkedin {
+	font-size: 24px;
+	color: #ffffff;
+}
+
+.soc-network,
+.copy-right {
+	// padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	color: #ffffff;
+}
+
+.copy-right {
+	/* margin: 10px 0 0 0; */
+	text-align: right;
+    @media screen and (max-width: 767px) {
+        font-size: initial;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .mob-show {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #page {
+        // border-top: 44px solid #ffffff;
+    }
+
+    #masthead .navbar {
+        min-height: inherit;
+    }
+
+    #idolcorp_menu {
+        cursor: pointer;
+        position: absolute;
+        // right: 12px;
+        text-align: center;
+        top: -7px;
+        z-index: 99;
+    }
+
+    #idolcorp_menu>span {
+        background: $color-ogange none repeat scroll 0 0;
+        display: block;
+        height: 3px;
+        margin: 4px auto;
+        width: 20px;
+    }
+
+    .menu-top-menu-container {
+        background: rgba(255, 255, 255, 0.80);
+        // height: -webkit-calc(100% - 45px);
+        // height: -moz-calc(100% - 45px);
+        // height: -ms-calc(100% - 45px);
+        // height: -o-calc(100% - 45px);
+        // height: calc(100% - 45px);
+        height: 100%;
+        left: -100%;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        transition: all 0.3s ease 0s;
+        width: 75%;
+        z-index: 9;
+        overflow: auto;
+    }
+
+    .menu-main-top-container {
+        padding-top: 54px;
+    }
+
+    .menu-top-menu-container ul li a {
+        color: $color-blue;
+        display: block;
+        font-size: 14px;
+        font-family: "Cabin";
+        padding: 15px 20px 20px;
+        font-weight: normal;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    li.current-menu-item a {
+        color: $color-white !important;
+        background: $color-blue none repeat scroll 0 0 !important;
+    }
+
+    .idolcorp-menu-active {
+        /*Disabling scrolling after the menu open*/
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .idolcorp-menu-active .menu-top-menu-container {
+        display: block;
+        opacity: 1;
+        left: 0;
+    }
+
+    .menu-top-menu-container ul li {
+        // border-top: 1px solid #666666;
+        display: block;
+        float: none;
+    }
+
+    /*Submenus on responsive*/
+    .menu-top-menu-container ul li ul {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: none;
+        display: block;
+        float: none;
+        padding: 0 0 0 30px;
+        position: static;
+        width: 100%;
+    }
+
+    .menu-top-menu-container ul li ul li ul {
+        border: none;
+    }
+
+    .menu-top-menu-container ul li ul,
+    .menu-top-menu-container ul li:hover ul ul,
+    .menu-top-menu-container ul ul li:hover ul ul,
+    .menu-top-menu-container ul ul ul li:hover ul ul,
+    .menu-top-menu-container ul ul ul ul li:hover ul ul {
+        display: block;
+    }
+
+    .home-page {
+        background: url(/wp-content/themes/idolcorp/images/light_mob.png) top center no-repeat;
+        padding-top: 310px;
+        // margin-top: -75px;
+    }
+
+    .entry-title {
+        // font-family: "Cabin", sans-serif;
+        font-size: 26px;
+
+        // text-transform: uppercase;
+        // padding-bottom: 15px;
+        a {
+            border-top: $color-ogange 6px solid;
+        }
+    }
+
+    .text-b {
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .hgroup-wrap {
+        display: none;
+    }
+
+    .page-title-wrap {
+        height: 175px;
+    }
 }

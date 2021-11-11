@@ -12,7 +12,8 @@
 get_header(); ?>
     <div id="main" class="site-main home">         
         <div class="container">
-            <div class="row content-wrap">              
+            <div class="row content-wrap">     
+            <?php echo idolcorp_custom_layout_class_and_structure('primary');?>         
                 <div id="content" class="page site-content"> 
                 <section id="articlemain" class="post" role="main">
                     <?php
