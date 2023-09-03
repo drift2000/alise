@@ -542,7 +542,7 @@ if (!function_exists('idolcorp_blog_content')) :
         if (is_archive() ||  is_search() ||is_category()) : // Only display Excerpts for Search
                     echo '<div class="entry-summary">';
                     the_excerpt();
-                    echo '<p><a href="'.esc_url(get_permalink()).'" class="read">'. __('Continue reading &raquo;', 'idolcorp').'</a></p>';
+                    // echo '<p><a href="'.esc_url(get_permalink()).'" class="read">'. __('Continue reading &raquo;', 'idolcorp').'</a></p>';
                     echo '</div><!-- .entry-summary -->'.
                   $image_wrapper_close;
         else :

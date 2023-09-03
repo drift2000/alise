@@ -734,14 +734,6 @@ Table of Content
 }
 
 /*  2.0 ===== Global =====   */
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-*:focus {
-  outline: none;
-}
-
 /*   -- "Header-Tags" (These are the styles for the Header Tags) --   */
 /*   -- "Accessibility" (These are the styles for the Accessibility) --   */
 .assistive-text,
@@ -1024,133 +1016,12 @@ a:hover {
 }
 
 /*   -- "Forms" (These are the styles for the Forms) --   */
-input[type=text],
-input[type=email],
-input[type=search],
-input[type=password],
-input[type=tel],
-input[type=url],
-input[type=date],
-textarea,
-input[type=reset],
-input[type=button],
-input[type=submit] {
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  -moz-box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-}
-
-input[type=text],
-input[type=email],
-input[type=search],
-input[type=password],
-input[type=tel],
-input[type=url],
-input[type=date],
-textarea {
-  border: 1px solid #c2c2c2;
-  margin: 0 0 15px;
-  padding: 13px 10px 10px;
-  width: 100%;
-}
-
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=search]:focus,
-input[type=password]:focus,
-input[type=tel]:focus,
-input[type=url]:focus,
-input[type=date]:focus,
-textarea:focus {
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-input[type=reset],
-input[type=button],
-input[type=submit] {
-  background: #e8e8e8;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px 0 #525252;
-  cursor: pointer;
-  display: block;
-  height: 40px;
-  margin-bottom: 30px;
-  margin-top: 5px;
-  padding: 0px 20px;
-  text-transform: uppercase;
-  text-align: center;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -ms-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-input[type=reset]:hover,
-input[type=button]:hover,
-input[type=submit]:hover {
-  background: #212e32;
-  border-color: #212e32;
-  color: white;
-}
-
-select {
-  padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  margin: 0 0 30px;
-  width: 50%;
-  background-color: #f9f9f9;
-}
-
-input[type=radio],
-input[type=checkbox],
-input[type=file] {
-  margin-bottom: 30px;
-}
-
-input[type=file] {
-  border: 0 none;
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  height: 40px;
-  text-transform: uppercase;
-  text-align: center;
-  -ms-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
 /*   -- "label" (These are the styles for the label) --   */
-label {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 5px;
-  width: 100%;
-}
-
 /*   -- "Article" (These are the styles for the Article) --   */
 article {
   /* color: rgb(102, 102, 102); */
   /* font-size: 14px; */
   /* line-height: 22px; */
-}
-
-#content .post {
-  padding-bottom: 30px;
 }
 
 .widget-promotional-bar article {
@@ -1202,42 +1073,6 @@ article {
 }
 
 /*   -- "Read-More-Button" (These are the styles for the Read-More-Button) --   */
-.read-more-button,
-.homeslider-read-more-button,
-.wpcf7-submit[type=submit],
-.form-submit input[type=submit],
-.comment-reply-link,
-.page-content .search-form .search-submit {
-  background: #e8e8e8 none repeat scroll 0 0;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px 0 #525252;
-  color: #545454;
-  display: inline-block;
-  font-size: 16px;
-  padding: 13px 40px;
-  text-align: center;
-  margin: 0 10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.read-more-button:hover,
-.homeslider-read-more-button:hover,
-.wpcf7-submit[type=submit]:hover,
-.form-submit input[type=submit]:hover,
-.comment-reply-link:hover,
-.page-content .search-form .search-submit:hover {
-  background-color: #212e32;
-  border-color: #212e32;
-  color: white !important;
-}
-
 /*   -- "Eroor-Button" (These are the styles for the Error-Button) --   */
 /*.error-button{
 
@@ -2335,9 +2170,6 @@ a.read:hover {
 
 /*   -- "Entry Content" section (These are the styles for the Entry Content section) --   */
 .entry-content {
-  border-bottom: 1px solid #d1d1d1;
-  display: block;
-  padding-bottom: 15px;
   /*overflow: hidden;*/
   /*Disable because of contact form submit button issue*/
 }
@@ -3176,23 +3008,6 @@ Slider css
 }
 
 /* 11.0 ===== Contact form 7 styling ===== */
-.wpcf7-form p {
-  margin: 0;
-}
-
-.wpcf7-form textarea {
-  height: 170px;
-  resize: none;
-}
-
-.wpcf7-submit[type=submit],
-.form-submit input[type=submit],
-.comment-reply-link,
-.page-content .search-form .search-submit {
-  padding: 5px 30px;
-  margin: 0;
-}
-
 /*  12.0 ===== Medias/Responsive =====   */
 /*
  * Does the same thing as <meta name="viewport" content="width=device-width">,

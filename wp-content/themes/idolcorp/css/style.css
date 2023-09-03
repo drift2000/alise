@@ -1,3 +1,12 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+*:focus {
+  outline: none;
+}
+
 .home-page h1 {
   color: #fe8f00;
   font-size: 45px;
@@ -17,9 +26,18 @@
   }
 }
 
+.gradient-news {
+  background: #dfdfdf;
+  background: linear-gradient(90deg, #dfdfdf 0%, white 95%);
+  width: max-content;
+  padding-right: 150px;
+  padding-left: 10px;
+}
+
 .home-page {
   background: url(/wp-content/themes/idolcorp/images/light.png) top center no-repeat;
   padding-top: 50%;
+  margin-top: -75px;
 }
 .home-page .decs {
   text-align: center;
@@ -243,6 +261,14 @@ article {
   }
 }
 
+input.wpcf7-submit {
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  color: #ffffff;
+  background: orange;
+}
+
 @media only screen and (min-width: 480px) {
   .mob-show {
     display: none;
@@ -348,7 +374,7 @@ article {
 
   .home-page {
     background: url(/wp-content/themes/idolcorp/images/light_mob.png) top center no-repeat;
-    padding-top: 310px;
+    padding-top: 80%;
   }
 
   .entry-title {

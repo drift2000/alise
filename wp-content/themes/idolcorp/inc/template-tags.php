@@ -275,21 +275,21 @@ function idolcorp_header_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
 	$categories_list='';
 	$categories_list = get_the_category_list( __( ', ', 'idolcorp' ) );
-	if ( $categories_list ) {
-		echo '<div class="entry-meta">';
-		echo '<span class="cat-links">' . $categories_list . '</span>';
-		echo '</div>';
-	}
+	// if ( $categories_list ) {
+	// 	echo '<div class="entry-meta">';
+	// 	echo '<span class="cat-links">' . $categories_list . '</span>';
+	// 	echo '</div>';
+	// }
 
 	// Post author
-	if ( 'post' == get_post_type() ) {
+	// if ( 'post' == get_post_type() ) {
 		
-		printf( '<div class="fa-user"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></div>',
-			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_attr( sprintf( __( 'View all posts by %s', 'idolcorp' ), get_the_author() ) ),
-			get_the_author()
-		);
-	}
+	// 	printf( '<div class="fa-user"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></div>',
+	// 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+	// 		esc_attr( sprintf( __( 'View all posts by %s', 'idolcorp' ), get_the_author() ) ),
+	// 		get_the_author()
+	// 	);
+	// }
 	idolcorp_entry_date();
 	
 	
@@ -306,7 +306,7 @@ if ( ! function_exists( 'idolcorp_entry_meta_tags' ) ) :
 function idolcorp_entry_meta_tags()
 {
 		/* translators: used between list items, there is a space after the comma */
-		echo '<footer class="entry-footer entry-meta-bar"><div class="entry-meta">';
+		echo '<footer class="entry-footer"><div class="entry-meta">';
 		$tags_list = get_the_tag_list( '', '' );
 		if ( $tags_list ) {
 			printf( '<span class="tag-links  clearfix"><h4>'.esc_html__( 'Tags', 'idolcorp' ).'</h4>' . esc_html__( '%1$s', 'idolcorp' ) . '</span>', $tags_list ); // WPCS: XSS OK.
@@ -335,7 +335,7 @@ function idolcorp_entry_date( $echo = true ) {
 	else
 		$format_prefix = '%2$s';
 
-	$date = sprintf( '<div class="fa-clock-o"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></div>',
+	$date = sprintf( '<div class="gradient-news"><time class="entry-date" datetime="%3$s">%4$s</time></div>',
 		esc_url( get_permalink() ),
 		esc_attr( sprintf( __( 'Permalink to %s', 'idolcorp' ), the_title_attribute( 'echo=0' ) ) ),
 		esc_attr( get_the_date( 'c' ) ),
